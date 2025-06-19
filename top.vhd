@@ -30,7 +30,8 @@ architecture Behavioral of pong_top is
     signal active     : STD_LOGIC;
 
     -- Jogo
-    signal ball_x, ball_y     : INTEGER range 0 to 639;
+    signal ball_x     : INTEGER range 0 to 639;
+    signal ball_y     : INTEGER range 0 to 479;  
     signal paddle_y           : INTEGER range 0 to 479;
 
     -- Cores
