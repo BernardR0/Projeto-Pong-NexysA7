@@ -18,10 +18,11 @@ begin
             counter <= (others => '0');
             clk_reg <= '0';
         elsif rising_edge(clk) then
-            counter <= counter + 1;
-            if counter = "10" then
+            if counter = "01" then  -- conta até 1
                 clk_reg <= not clk_reg;
                 counter <= (others => '0');
+            else
+                counter <= counter + 1;
             end if;
         end if;
     end process;
